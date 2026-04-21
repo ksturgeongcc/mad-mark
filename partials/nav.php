@@ -1,9 +1,9 @@
-<nav class="bg-white shadow-md">
+<nav class="bg-emerald-900 shadow-md text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <!-- Logo -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="#" class="text-xl text-blue-600 font-bold text-gray-800">DanDev</a>
+        <a href="#" class="text-xl text-white font-bold text-gray-800">DanDev</a>
       </div>
 
       <!-- Desktop Menu -->
