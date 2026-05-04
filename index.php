@@ -1,6 +1,6 @@
 <?php
 include 'partials/header.php';
-include 'config/dbConfig.php';
+include 'scripts/featured_games.php';
 ?>
 <section 
   class="relative bg-cover bg-center bg-no-repeat h-[50vh] flex items-center justify-center" 
@@ -34,16 +34,17 @@ include 'config/dbConfig.php';
 
     <!-- Cards Grid -->
     <div class="grid gap-8 md:grid-cols-3">
+        <?php foreach ($featured_games as $game): ?>
 
       <!-- Card 1 -->
       <div class="bg-white rounded-xl shadow-lg overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f" 
-          alt="Game 1" 
+          src="assets/images/<?= htmlspecialchars($game['game_image'], ENT_QUOTES, 'UTF-8') ?>" 
+          alt="<?= htmlspecialchars($game['game_name'], ENT_QUOTES, 'UTF-8') ?>" 
           class="w-full h-48 object-cover"
         >
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Cyber Quest</h3>
+          <h3 class="text-xl font-semibold mb-3"><?= htmlspecialchars($game['game_name'], ENT_QUOTES, 'UTF-8') ?> </h3>
           <p class="text-gray-600 mb-4">
             Dive into a futuristic world filled with neon lights, fast action, and mystery.
           </p>
@@ -52,43 +53,8 @@ include 'config/dbConfig.php';
           </button>
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1542751371-adc38448a05e" 
-          alt="Game 2" 
-          class="w-full h-48 object-cover"
-        >
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Fantasy Realms</h3>
-          <p class="text-gray-600 mb-4">
-            Explore enchanted lands, battle mythical creatures, and forge your destiny.
-          </p>
-          <button class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
-            More Info
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1511512578047-dfb367046420" 
-          alt="Game 3" 
-          class="w-full h-48 object-cover"
-        >
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Racing Thunder</h3>
-          <p class="text-gray-600 mb-4">
-            High‑speed racing with stunning visuals and intense competitive gameplay.
-          </p>
-          <button class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
-            More Info
-          </button>
-        </div>
-      </div>
-
+<?php endforeach ?>
+     
     </div>
   </div>
 </section>

@@ -1,8 +1,8 @@
 <?php
 $hn = "localhost";
-$un = "mm_admin"; // your database user name
-$pw = "r(AsEaSMEBXtjTi4"; // your database user password
-$db = "mad_mark"; // this will be your database name
+$un = "karen"; // your database user name
+$pw = "password"; // your database user password
+$db = "mad_marks"; // this will be your database name
 
 
 // Create database connection
