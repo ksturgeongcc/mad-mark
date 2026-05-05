@@ -1,5 +1,5 @@
 <?php
-    include 'scripts/search.php';
+include 'config/dbConfig.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@
         <input 
             type="text" 
             name="q" 
-            value="<?= htmlspecialchars($searchTerm, ENT_QUOTES, 'UTF-8') ?>"
+            value=""
             class="w-full border h-12 shadow p-4 rounded-full" 
             placeholder="Search games"
         >
