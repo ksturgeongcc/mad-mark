@@ -2,7 +2,7 @@
 $hn = "localhost";
 $un = "karen"; // your database user name
 $pw = "password"; // your database user password
-$db = "mad-mark"; // this will be your database name
+$db = "mad_marks"; // this will be your database name
 
 
 // Create database connection

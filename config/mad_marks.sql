@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 04, 2026 at 11:30 PM
+-- Generation Time: May 11, 2026 at 11:02 PM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -56,7 +56,7 @@ CREATE TABLE `game` (
   `rating` varchar(2) COLLATE utf8mb4_general_ci NOT NULL,
   `fk_genre_id` int NOT NULL,
   `name` varchar(64) COLLATE utf8mb4_general_ci NOT NULL,
-  `description` tinytext COLLATE utf8mb4_general_ci NOT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `image` varchar(32) COLLATE utf8mb4_general_ci NOT NULL,
   `main_character` varchar(64) COLLATE utf8mb4_general_ci NOT NULL,
   `price` decimal(5,2) NOT NULL,
@@ -68,18 +68,18 @@ CREATE TABLE `game` (
 --
 
 INSERT INTO `game` (`id`, `added_on`, `rating`, `fk_genre_id`, `name`, `description`, `image`, `main_character`, `price`, `year`) VALUES
-(1, '2026-05-04 01:03:29', '7+', 4, 'Mario Kart 8 Deluxe', 'A colourful racing game featuring Mario characters and fast-paced tracks.', 'mario.webp', 'Mario', 39.99, 2017),
-(2, '2026-05-04 01:03:29', '12', 2, 'The Legend of Zelda', 'An open-world adventure game where Link explores Hyrule.', 'mario.webp', 'Link', 49.99, 2017),
-(3, '2026-05-04 01:03:29', '3+', 3, 'EA Sports FC 24', 'A football simulation game with teams, leagues and tournaments.', 'mario.webp', 'Various', 34.99, 2023),
-(4, '2026-05-04 01:03:29', '18', 1, 'Call of Duty MW3', 'A first-person action game with campaign and multiplayer modes.', 'mario.webp', 'Captain Price', 54.99, 2023),
-(5, '2026-05-04 01:03:29', '16', 1, 'Spider-Man 2', 'An action-adventure game where players control Spider-Man in New York.', 'mario.webp', 'Peter Parker', 59.99, 2023),
-(6, '2026-05-04 01:03:29', '16', 1, 'Halo Infinite', 'A science fiction action game featuring battles against alien forces.', 'mario.webp', 'Master Chief', 29.99, 2021),
-(7, '2026-05-04 01:03:29', '7+', 5, 'Minecraft', 'A sandbox game where players build, explore and survive in block worlds.', 'mario.webp', 'Steve', 24.99, 2011),
-(8, '2026-05-04 01:03:29', '3+', 5, 'Animal Crossing', 'A relaxing life simulation game where players build an island community.', 'mario.webp', 'Villager', 39.99, 2020),
-(9, '2026-05-04 01:03:29', '18', 1, 'Cyberpunk 2077', 'A futuristic role-playing action game set in Night City.', 'mario.webp', 'V', 29.99, 2020),
-(10, '2026-05-04 01:03:29', '3+', 4, 'Gran Turismo 7', 'A realistic racing game featuring licensed cars and tracks.', 'mario.webp', 'Driver', 44.99, 2022),
-(11, '2026-05-04 01:03:29', '18', 2, 'Elden Ring', 'A fantasy adventure game with exploration, combat and boss battles.', 'mario.webp', 'Tarnished', 49.99, 2022),
-(12, '2026-05-04 01:03:29', '12', 1, 'Fortnite', 'An online battle royale game with building and combat mechanics.', 'mario.webp', 'Various', 0.00, 2017);
+(1, '2026-05-04 01:03:29', '7+', 4, 'Mario Kart 8 Deluxe', 'A colourful racing game featuring Mario characters and fast-paced tracks.', 'mario_kart_8_deluxe.webp', 'Mario', 39.99, 2017),
+(2, '2026-05-04 01:03:29', '12', 2, 'The Legend of Zelda', 'An open-world adventure game where Link explores Hyrule.', 'legends_of_zelda.webp', 'Link', 49.99, 2017),
+(3, '2026-05-04 01:03:29', '3+', 3, 'EA Sports FC 24', 'A football simulation game with teams, leagues and tournaments.', 'fifa.webp', 'Various', 34.99, 2023),
+(4, '2026-05-04 01:03:29', '18', 1, 'Call of Duty MW3', 'A first-person action game with campaign and multiplayer modes.', 'call_of_duty_mw3.jpg', 'Captain Price', 54.99, 2023),
+(5, '2026-05-04 01:03:29', '16', 1, 'Spider-Man 2', 'An action-adventure game where players control Spider-Man in New York.', 'spider_man_2.webp', 'Peter Parker', 59.99, 2023),
+(6, '2026-05-04 01:03:29', '16', 1, 'Halo Infinite', 'A science fiction action game featuring battles against alien forces.', 'halo_infinite.jpg', 'Master Chief', 29.99, 2021),
+(7, '2026-05-04 01:03:29', '7+', 5, 'Minecraft', 'A sandbox game where players build, explore and survive in block worlds.', 'minecraft.jpg', 'Steve', 24.99, 2011),
+(8, '2026-05-04 01:03:29', '3+', 5, 'Animal Crossing', 'Animal Crossing is a relaxing life simulation game where players move to a peaceful village or island filled with friendly animal characters. Instead of focusing on combat or competition, the game encourages players to explore, decorate, collect items, fish, catch bugs, and build relationships with neighbours. Time passes in real time, meaning seasons, weather, and events change throughout the year, helping the world feel alive and different each day you play.  The game is well known for its calm atmosphere, creative freedom, and charming style. Players can customise their homes, design clothing, arrange furniture, and slowly improve their surroundings while completing tasks and earning in-game currency called Bells. Its open-ended gameplay makes it suitable for players of all ages, offering a relaxing experience that focuses on creativity, routine, and social interaction rather than fast-paced action.', 'animal_crossing.jpg', 'Villager', 39.99, 2020),
+(9, '2026-05-04 01:03:29', '18', 1, 'Cyberpunk 2077', 'A futuristic role-playing action game set in Night City.', 'cyber_punk.webp', 'V', 29.99, 2020),
+(10, '2026-05-04 01:03:29', '3+', 4, 'Gran Turismo 7', 'A realistic racing game featuring licensed cars and tracks.', 'grand_turismo.jpg', 'Driver', 44.99, 2022),
+(11, '2026-05-04 01:03:29', '18', 2, 'Elden Ring', 'A fantasy adventure game with exploration, combat and boss battles.', 'elden_ring.jpg', 'Tarnished', 49.99, 2022),
+(12, '2026-05-04 01:03:29', '12', 1, 'Fortnite', 'An online battle royale game with building and combat mechanics.', 'fortnite.jpg', 'Various', 0.00, 2017);
 
 -- --------------------------------------------------------
 

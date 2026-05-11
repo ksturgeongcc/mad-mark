@@ -1,17 +1,15 @@
-<nav class="bg-emerald-900 shadow-md text-white">
+<nav class="bg-black shadow-md text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <!-- Logo -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="#" class="text-xl text-white font-bold text-gray-800">DanDev</a>
+        <a href="#" class="text-xl text-white font-bold text-gray-800"><img class="h-10 w-10 rounded-full" src="assets/images/mad_mike_logo.png" alt="Logo"></a>
       </div>
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6 items-center">
-        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Projects</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+        <a href="games.php" class="text-red-900 hover:text-white font-medium">Games</a>
+        <a href="contact.php" class="text-gray-600 hover:text-white font-medium">Contact</a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -29,10 +27,8 @@
 
 
   <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-    <a href="#" class="block text-gray-600 hover:text-blue-600">Home</a>
-    <a href="#" class="block text-gray-600 hover:text-blue-600">Projects</a>
-    <a href="#" class="block text-gray-600 hover:text-blue-600">About</a>
-    <a href="#" class="block text-gray-600 hover:text-blue-600">Contact</a>
+    <a href="games.php" class="block text-red-900 hover:text-white">Games</a>
+    <a href="contact.php" class="block text-red-900 hover:text-white">Contact</a>
   </div>
 </nav>
 

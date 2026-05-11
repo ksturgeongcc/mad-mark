@@ -4,7 +4,7 @@ include 'scripts/featured_games.php';
 ?>
 <section 
   class="relative bg-cover bg-center bg-no-repeat h-[50vh] flex items-center justify-center" 
-  style="background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');"
+  style="background-image: url('assets/images/bg.webp');"
 >
   <div class="absolute inset-0 bg-black/50"></div>
 

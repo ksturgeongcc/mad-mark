@@ -11,8 +11,8 @@
         <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
             <div class="relative overflow-hidden h-80">
                 <!-- display game image safely -->
-                <img src="assets/images/<?= htmlspecialchars($game['game_image'], ENT_QUOTES, 'UTF-8') ?>" 
-                        alt="Image of <?= htmlspecialchars($game['game_name'], ENT_QUOTES, 'UTF-8') ?>" <!-- use game name for accessibility -->
+                <img src="assets/images/games/<?= htmlspecialchars($game['game_image'], ENT_QUOTES, 'UTF-8') ?>" 
+                        alt="Image of <?= htmlspecialchars($game['game_name'], ENT_QUOTES, 'UTF-8') ?>" 
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <button class="mt-4 bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300">
+                <button class="mt-4 bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300" onclick="window.location.href='game_details.php?game_id=<?= $game['id'] ?>'">
                     More Details
                 </button>
 
