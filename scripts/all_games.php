@@ -23,11 +23,7 @@ $sql = "
     -- group results so each game only appears once
     -- (without this, games may repeat due to multiple related records)
     GROUP BY 
-        game.id,
-        game.name,
-        game.price,
-        game.rating,
-        genre.name
+        game.id
 
     -- order results alphabetically by game name
     ORDER BY game.name ASC
